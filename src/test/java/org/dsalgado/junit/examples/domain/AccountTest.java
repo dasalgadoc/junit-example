@@ -13,6 +13,6 @@ class AccountTest {
 
         assertThrows(EmptyNameException.class,
                 () -> new Account("",new BigDecimal(0)));
-        
+
     }
 }
