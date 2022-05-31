@@ -10,7 +10,17 @@ public class Balance {
     }
 
     public Balance(BigDecimal balance){
+
+        if (balance.doubleValue() < 0){
+            throw new NegativeBalanceException();
+        }
+
         this.balance = balance;
+
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
     }
 
 }

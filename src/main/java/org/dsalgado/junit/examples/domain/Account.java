@@ -21,8 +21,8 @@ public class Account {
         this.owner = owner;
     }
 
-    public Balance getBalance() {
-        return balance;
+    public BigDecimal getBalance() {
+        return balance.getBalance();
     }
 
     public void setBalance(Balance balance) {
